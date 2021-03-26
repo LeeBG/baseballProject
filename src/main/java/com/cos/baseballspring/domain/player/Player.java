@@ -42,6 +42,9 @@ public class Player {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
+	@Column(name = "No")
+	private Integer no;
+	
 	@Column(name = "name")
 	private String name;
 	

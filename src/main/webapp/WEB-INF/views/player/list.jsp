@@ -17,7 +17,7 @@
  	<c:forEach var="item" items="${dto}">
 		<div class="card list-${item.id }">
 			<div class="card-body d-flex justify-content-between">
-		    	<p class="mb-0">${item.id }</p>
+		    	<p class="mb-0">${item.no }</p>
 		    	<p class="mb-0">${item.name }</p>
 		    	<p class="mb-0">${item.position }</p>
 		    	<p class="mb-0">${item.team.name}</p>

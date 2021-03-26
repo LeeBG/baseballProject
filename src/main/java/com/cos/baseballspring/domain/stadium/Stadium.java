@@ -34,5 +34,6 @@ public class Stadium {
 	@OneToOne(mappedBy = "stadium") 
 	private Team team;
 	
-
+	@CreationTimestamp
+	private Timestamp createDate;
 }

@@ -43,5 +43,8 @@ public class Team {			//Lotte, NC, KIA
 	@JsonIgnoreProperties({ "team" })
 	@OneToMany(mappedBy = "team", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE) // mappedBy : reply의 변수명
 	private List<Player> players;
+	
+	@CreationTimestamp
+	private Timestamp createDate;
 
 }
